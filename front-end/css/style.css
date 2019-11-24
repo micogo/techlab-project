@@ -1,0 +1,340 @@
+header nav .nav-main .nav-main-right .user-name, header nav .nav-main .nav-main-right .logout, header nav .nav-search .nav-search-button {
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+/* header setting - start */
+header {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 56px 56px;
+  height: 56px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 112px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 112px;
+  }
+}
+header nav {
+  width: 100%;
+  height: 56px;
+  background-color: #d71920;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav {
+    background-color: #ac1419;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav {
+    background-color: #ac1419;
+    height: auto;
+  }
+}
+header nav .nav-main {
+  display: grid;
+  grid-template-columns: 20px 132px auto 70px 20px;
+  grid-template-rows: 56px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main {
+    grid-template-columns: 20px 37px auto 193px 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main {
+    grid-template-columns: 66px 166px auto 390px 66px;
+  }
+}
+header nav .nav-main .nav-main-left {
+  display: grid;
+  grid-column: 2/3;
+}
+header nav .nav-main .nav-main-left .logo {
+  display: grid;
+  width: 131.7px;
+  height: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-left .logo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-left .logo {
+    display: grid;
+    width: 166px;
+    height: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+header nav .nav-main .nav-main-left .logo-tab {
+  color: white;
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-left .logo-tab {
+    display: grid;
+    width: 31.6px;
+    height: 25.6px;
+    margin-top: 15px;
+    margin-bottom: 15.1px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-left .logo-tab {
+    display: none;
+  }
+}
+header nav .nav-main .nav-main-right {
+  display: grid;
+  grid-column: 4 / 5;
+  grid-template-columns: 20px 30px 20px;
+  grid-template-rows: 56px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right {
+    display: grid;
+    grid-column: 4/ 5;
+    grid-template-columns: 16px 20px 20px 20px 20px 16px 41px 60px;
+    grid-template-rows: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right {
+    grid-template-columns: 16px 20px 20px 20px 16px 16px auto auto 60px;
+    grid-template-rows: 56px;
+  }
+}
+header nav .nav-main .nav-main-right .search-icon {
+  display: grid;
+  grid-column: 1/2;
+  width: 20px;
+  height: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .search-icon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .search-icon {
+    display: none;
+  }
+}
+header nav .nav-main .nav-main-right .hamburger-icon {
+  display: grid;
+  grid-column: 3/4;
+  margin: 3px 3px;
+  width: 20px;
+  height: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .hamburger-icon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .hamburger-icon {
+    display: none;
+  }
+}
+header nav .nav-main .nav-main-right .settings-icon {
+  display: none;
+  width: 16px;
+  height: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .settings-icon {
+    display: grid;
+    grid-column: 1/ 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .settings-icon {
+    display: grid;
+    grid-column: 1/ 2;
+  }
+}
+header nav .nav-main .nav-main-right .mail-icon {
+  display: none;
+  width: 20px;
+  height: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .mail-icon {
+    display: grid;
+    grid-column: 3/ 4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .mail-icon {
+    display: grid;
+    grid-column: 3/ 4;
+  }
+}
+header nav .nav-main .nav-main-right .user-icon {
+  display: none;
+  width: 16px;
+  height: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .user-icon {
+    display: grid;
+    grid-column: 5/ 6;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .user-icon {
+    display: grid;
+    grid-column: 5/ 6;
+  }
+}
+header nav .nav-main .nav-main-right .user-name {
+  display: none;
+  height: 15px;
+  font-size: 12px;
+  letter-spacing: 0.14px;
+  color: white;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .user-name {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .user-name {
+    display: grid;
+    grid-column: 7/ 8;
+  }
+}
+header nav .nav-main .nav-main-right .logout {
+  display: none;
+  height: 15px;
+  font-size: 12px;
+  letter-spacing: 0.14px;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  border: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-main .nav-main-right .logout {
+    display: grid;
+    grid-column: 7/ 8;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-main .nav-main-right .logout {
+    display: grid;
+    grid-column: 9/ 10;
+  }
+}
+header nav .nav-search {
+  display: none;
+  width: 100%;
+  height: 56px;
+  background-color: #d71920;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-search {
+    display: grid;
+    grid-template-columns: 20px 113px 113px auto 280px 20px;
+    grid-template-rows: 56px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header nav .nav-search {
+    display: grid;
+    grid-template-columns: 66px 113px 113px auto 485px 66px;
+    grid-template-rows: 56px;
+  }
+}
+header nav .nav-search .nav-search-button:nth-child(1) {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+header nav .nav-search .nav-search-button:nth-child(2) {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+header nav .nav-search .nav-search-button {
+  color: #f4f4f4;
+  width: 113px;
+  height: 41px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 12px;
+}
+header nav .nav-search .nav-search-button.active {
+  color: #ac1419;
+  background-color: #f4f4f4;
+}
+header nav .nav-search .search-container {
+  display: grid;
+  grid-column: 5/6;
+  width: 100%;
+  height: 40px;
+}
+header nav .nav-search .search-container form {
+  display: grid;
+  grid-template-columns: auto 40px 18px;
+  grid-template-rows: 40px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+header nav .nav-search .search-container form input {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 18px;
+  font-size: 16px;
+}
+header nav .nav-search .search-container form button {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+header nav .nav-search .search-container form button .search-icon-red {
+  height: 20px;
+  width: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav .nav-search .search-container form button:hover {
+    background: #ccc;
+  }
+}
+
+main {
+  background-color: #f4f4f4;
+}
