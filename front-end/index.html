@@ -5,13 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Pekao SA</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="nav-main">
+          <div class="nav-main-left">
+            <img src="./img/logo-tab.svg" class="logo-tab" />
+            <img src="./img/logo-company.svg" class="logo" />
+          </div>
+          <div class="nav-main-right">
+            <img src="./img/icon-search-white.svg" class="search-icon" />
+            <img src="./img/icon-hamburger.svg" class="hamburger-icon" />
+            <img src="./img/icon-settings.svg" class="settings-icon" />
+            <img src="./img/icon-mail.svg" class="mail-icon" />
+            <img src="./img/icon-user.svg" class="user-icon" />
+            <div class="user-name">Katarzyna Kowalewska</div>
+            <a href="#" class="logout">WYLOGUJ</a>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <button class="nav-search-button active">
+            <span class="content">PRODUKTY</span>
+          </button>
+          <button class="nav-search-button">
+            <span class="content">PŁATNOŚCI</span>
+          </button>
+          <div class="search-container">
+            <form action="/">
+              <input type="text" placeholder="Wyszukaj" name="search" />
+              <button type="submit">
+                <img src="./img/icon-search-red.svg" class="search-icon-red" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- /nav-search -->
+      </nav>
+      <!-- /nav -->
     </header>
     <main>
       <section>
