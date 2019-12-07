@@ -8,6 +8,10 @@
     <title>Pekao SA</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+    />
   </head>
   <body>
     <header>
@@ -50,9 +54,71 @@
     </header>
     <main>
       <section>
-        <figure></figure>
+        <div class="account-details">
+          <div class="account-name">RACHUNEK PODSTAWOWY</div>
+          <div class="account-title">Moje konto przekorzystne</div>
+          <div class="account-number">12 3456 7890 1234 5678 9012 3456</div>
+          <div class="balance-desc">Dostępne Środki</div>
+          <div class="balance-value">12 345,67 PLN</div>
+        </div>
+        <div class="action-buttons">
+          <button class="payment-button">
+            <span class="content">NOWA PŁATNOŚĆ</span>
+          </button>
+          <button class="story-button">
+            <span class="content">HISTORIA</span>
+          </button>
+        </div>
+        <!-- <table class="payment-table">
+          <thead>
+            <tr>
+              <th>DATA</th>
+              <th>TYP</th>
+              <th>ODBIORCA / NADAWCA / TYTUŁ</th>
+              <th>KATEGORIA</th>
+              <th>KWOTA</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td class="date-col">
+                <div class="outcome-type">
+                  <img src="./img/icon-outcome.svg" />
+                </div>
+                <div class="outcome-date">21.05</div>
+              </td>
+              <td class="icon-col">
+                <img src="./img/icon-outcome.svg" />
+              </td>
+              <td class="details-col">
+                <div class="outcome-from-to-title">
+                  Antonina Wójcik
+                </div>
+                <div class="outcome-category">Zwrot</div>
+              </td>
+              <td class="category-col"></td>
+              <td><div class="outcome-value">125,68 PLN</div></td>
+            </tr>
+          </tbody>
+        </table> -->
+
+        <div class="show-more-button">
+          <a href="#">POKAŻ WIĘCEJ</a>
+        </div>
       </section>
-      <aside></aside>
+      <aside>
+        <div class="aside-box-1">
+          <h1>Masz wolne środki</h1>
+          <p>
+            Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
+            lokatę i uchronić przed inflacją
+          </p>
+          <a href="">Call To Action</a>
+        </div>
+        <div class="aside-box-2">
+          <h1>Analiza wydatków</h1>
+        </div>
+      </aside>
     </main>
 
     <footer>
@@ -77,7 +143,96 @@
         034 zł.
       </div>
     </footer>
+    <div class="popup-wrap none">
+      <div class="transfer-form-container">
+        <div class="transfer-form-header">
+          <div class="transfer-form-title">Przelew krajowy</div>
+          <img src="./img/icon-close.svg" class="close-icon" />
+        </div>
+        <div class="transfer-form-content">
+          <form>
+            <label for="chooseAccount" id="chooseAccountLbl">
+              <div class="formElementDesc">Z RACHUNKU:</div>
+              <select id="chooseAccount" class="chooseAccount">
+                <option value="1"><div class="account">Moje konto</div></option>
+                <option value="2"><div class="account">Moje konto</div></option>
+                <option value="3"><div class="account">Moje konto</div></option>
+                <option value="4"><div class="account">Moje konto</div></option>
+              </select>
+            </label>
+            <label for="toAccountNumber" id="toAccountNumberLbl">
+              <div class="formElementDesc">NA RACHUNEK:</div>
+              <input
+                type="text"
+                id="toAccountNumber"
+                class="transferRecAccountNr-input"
+                name="user_name"
+                placeholder="Wpisz rachunek odbiorcy"
+              />
+            </label>
+            <label for="transferValue" id="transferValueLbl">
+              <div class="formElementDesc">KWOTA PRZELEWU:</div>
+              <input
+                type="text"
+                id="transferValue"
+                class="transferAmount-input"
+                name="user_name"
+                placeholder="0,0"
+              />
+            </label>
+            <label for="recipientAddress" id="recipientAddressLbl">
+              <div class="formElementDesc">ADRES ODBIORCY (OPCJONALNIE):</div>
+              <input
+                type="text"
+                class="transferRecPostalCode-input"
+                id="recipientAddress"
+                name="user_name"
+                placeholder="Wpisz adres odbiocy"
+              />
+            </label>
+
+            <label for="transferTitle" id="transferTitleLbl">
+              <div class="formElementDesc">TYTUŁEM:</div>
+              <input
+                type="text"
+                class="transferTitle-input"
+                id="transferTitle"
+                name="user_name"
+                placeholder="Wpisz tytuł"
+              />
+            </label>
+
+            <label class="checkbox-container">
+              <div id="setAsStaticOrderDesc">Zapisz jako zlecenie stałe</div>
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+
+            <label for="orderName" id="orderNameLbl">
+              <div class="formElementDesc">NAZWA ZLECENIA:</div>
+              <input
+                type="text"
+                id="orderName"
+                name="user_name"
+                placeholder="Nadaj nazwę zlecenia"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="transfer-form-footer">
+          <div class="transfer-form-oval">
+            <img src="./img/arrow-right.svg" />
+            <div class="next">Dajel</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/validator.js"></script>
+    <script src="./js/consumer.js"></script>
+    <script src="./js/regexpObject.js"></script>
+    <script src="./js/inputObject.js"></script>
   </body>
 </html>
+`
