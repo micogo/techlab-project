@@ -1,0 +1,4 @@
+{
+	"cards": [<%-JSON.stringify(faker.helpers.createCard());%>]
+}
+
