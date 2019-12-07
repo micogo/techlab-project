@@ -19,6 +19,9 @@ class Validator {
 		console.log(sendData.amount);
 	}
 
+
+	// stylowanko nie działa
+
 	customValidation(inputElementObj) {
 		if (inputElementObj.regexp.test(inputElementObj.selector.value)) {
 			inputElementObj.selector.classList.contains("border-red") && inputElementObj.selector.classList.remove("border-red");

@@ -27,6 +27,8 @@ class TransferInputElement {
 		this.value = this.selector.value;
 	}
 }
+
+//zwracasz to samo 2 razy z inna nazwa 
 function inputElement (selector, regexp, id) {
 	return new TransferInputElement (selector, regexp, id);
 }
