@@ -1,449 +1,878 @@
+body {
+  display: grid;
+  grid-template-rows: 56px auto 330px;
+  grid-template-columns: 1fr;
+  font-family: "Lato", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    body {
+      grid-template-rows: 112px auto 140px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      grid-template-rows: 112px auto 140px; } }
+
 header nav .nav-main .nav-main-right .user-name, header nav .nav-main .nav-main-right .logout, header nav .nav-search .nav-search-button, footer {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
-}
+  line-height: normal; }
 
 /* header setting - start */
 header {
   display: grid;
+  grid-row: 1 / 2;
   grid-template-columns: 100%;
   grid-template-rows: 56px 56px;
-  height: 56px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 112px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 112px;
-  }
-}
-header nav {
-  width: 100%;
-  height: 56px;
-  background-color: #d71920;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  height: 56px; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+      height: 112px; } }
+  @media only screen and (min-width: 1024px) {
+    header {
+      height: 112px; } }
   header nav {
-    background-color: #ac1419;
-    height: auto;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav {
-    background-color: #ac1419;
-    height: auto;
-  }
-}
-header nav .nav-main {
-  display: grid;
-  grid-template-columns: 20px 132px auto 70px 20px;
-  grid-template-rows: 56px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main {
-    grid-template-columns: 20px 37px auto 193px 20px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main {
-    grid-template-columns: 66px 166px auto 390px 66px;
-  }
-}
-header nav .nav-main .nav-main-left {
-  display: grid;
-  grid-column: 2/3;
-}
-header nav .nav-main .nav-main-left .logo {
-  display: grid;
-  width: 131.7px;
-  height: 20px;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-left .logo {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-left .logo {
-    display: grid;
-    width: 166px;
-    height: 26px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-header nav .nav-main .nav-main-left .logo-tab {
-  color: white;
-  display: none;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-left .logo-tab {
-    display: grid;
-    width: 31.6px;
-    height: 25.6px;
-    margin-top: 15px;
-    margin-bottom: 15.1px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-left .logo-tab {
-    display: none;
-  }
-}
-header nav .nav-main .nav-main-right {
-  display: grid;
-  grid-column: 4 / 5;
-  grid-template-columns: 20px 30px 20px;
-  grid-template-rows: 56px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right {
-    display: grid;
-    grid-column: 4/ 5;
-    grid-template-columns: 16px 20px 20px 20px 20px 16px 41px 60px;
-    grid-template-rows: 56px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right {
-    grid-template-columns: 16px 20px 20px 20px 16px 16px auto auto 60px;
-    grid-template-rows: 56px;
-  }
-}
-header nav .nav-main .nav-main-right .search-icon {
-  display: grid;
-  grid-column: 1/2;
-  width: 20px;
-  height: 20px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .search-icon {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .search-icon {
-    display: none;
-  }
-}
-header nav .nav-main .nav-main-right .hamburger-icon {
-  display: grid;
-  grid-column: 3/4;
-  margin: 3px 3px;
-  width: 20px;
-  height: 14px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .hamburger-icon {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .hamburger-icon {
-    display: none;
-  }
-}
-header nav .nav-main .nav-main-right .settings-icon {
-  display: none;
-  width: 16px;
-  height: 16px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .settings-icon {
-    display: grid;
-    grid-column: 1/ 2;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .settings-icon {
-    display: grid;
-    grid-column: 1/ 2;
-  }
-}
-header nav .nav-main .nav-main-right .mail-icon {
-  display: none;
-  width: 20px;
-  height: 14px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .mail-icon {
-    display: grid;
-    grid-column: 3/ 4;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .mail-icon {
-    display: grid;
-    grid-column: 3/ 4;
-  }
-}
-header nav .nav-main .nav-main-right .user-icon {
-  display: none;
-  width: 16px;
-  height: 16px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .user-icon {
-    display: grid;
-    grid-column: 5/ 6;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .user-icon {
-    display: grid;
-    grid-column: 5/ 6;
-  }
-}
-header nav .nav-main .nav-main-right .user-name {
-  display: none;
-  height: 15px;
-  font-size: 12px;
-  letter-spacing: 0.14px;
-  color: white;
-  position: relative;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .user-name {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .user-name {
-    display: grid;
-    grid-column: 7/ 8;
-  }
-}
-header nav .nav-main .nav-main-right .logout {
-  display: none;
-  height: 15px;
-  font-size: 12px;
-  letter-spacing: 0.14px;
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  border: 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-main .nav-main-right .logout {
-    display: grid;
-    grid-column: 7/ 8;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-main .nav-main-right .logout {
-    display: grid;
-    grid-column: 9/ 10;
-  }
-}
-header nav .nav-search {
-  display: none;
-  width: 100%;
-  height: 56px;
-  background-color: #d71920;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-search {
-    display: grid;
-    grid-template-columns: 20px 113px 113px auto 280px 20px;
-    grid-template-rows: 56px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header nav .nav-search {
-    display: grid;
-    grid-template-columns: 66px 113px 113px auto 485px 66px;
-    grid-template-rows: 56px;
-  }
-}
-header nav .nav-search .nav-search-button:nth-child(1) {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-header nav .nav-search .nav-search-button:nth-child(2) {
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-header nav .nav-search .nav-search-button {
-  color: #f4f4f4;
-  width: 113px;
-  height: 41px;
-  margin-bottom: 0px;
-  margin-top: 15px;
-  border: none;
-  background-color: transparent;
-  text-align: center;
-  font-size: 12px;
-}
-header nav .nav-search .nav-search-button.active {
-  color: #ac1419;
-  background-color: #f4f4f4;
-}
-header nav .nav-search .search-container {
-  display: grid;
-  grid-column: 5/6;
-  width: 100%;
-  height: 40px;
-}
-header nav .nav-search .search-container form {
-  display: grid;
-  grid-template-columns: auto 40px 18px;
-  grid-template-rows: 40px;
-  width: 100%;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-header nav .nav-search .search-container form input {
-  display: grid;
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  border-radius: 4px;
-  width: 100%;
-  height: 40px;
-  padding-left: 18px;
-  font-size: 16px;
-}
-header nav .nav-search .search-container form button {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  height: 40px;
-  width: 40px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-header nav .nav-search .search-container form button .search-icon-red {
-  height: 20px;
-  width: 20px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  header nav .nav-search .search-container form button:hover {
-    background: #ccc;
-  }
-}
+    width: 100%;
+    height: 56px;
+    background-color: #d71920; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      header nav {
+        background-color: #ac1419;
+        height: auto; } }
+    @media only screen and (min-width: 1024px) {
+      header nav {
+        background-color: #ac1419;
+        height: auto; } }
+    header nav .nav-main {
+      display: grid;
+      grid-template-columns: 20px 132px auto 70px 20px;
+      grid-template-rows: 56px; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        header nav .nav-main {
+          grid-template-columns: 20px 37px auto 193px 20px; } }
+      @media only screen and (min-width: 1024px) {
+        header nav .nav-main {
+          grid-template-columns: 66px 166px auto 390px 66px; } }
+      header nav .nav-main .nav-main-left {
+        display: grid;
+        grid-column: 2/3; }
+        header nav .nav-main .nav-main-left .logo {
+          display: grid;
+          width: 131.7px;
+          height: 20px;
+          margin-top: 18px;
+          margin-bottom: 18px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-left .logo {
+              display: none; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-left .logo {
+              display: grid;
+              width: 166px;
+              height: 26px;
+              margin-top: 15px;
+              margin-bottom: 15px; } }
+        header nav .nav-main .nav-main-left .logo-tab {
+          color: white;
+          display: none; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-left .logo-tab {
+              display: grid;
+              width: 31.6px;
+              height: 25.6px;
+              margin-top: 15px;
+              margin-bottom: 15.1px; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-left .logo-tab {
+              display: none; } }
+      header nav .nav-main .nav-main-right {
+        display: grid;
+        grid-column: 4 / 5;
+        grid-template-columns: 20px 30px 20px;
+        grid-template-rows: 56px;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          header nav .nav-main .nav-main-right {
+            display: grid;
+            grid-column: 4/ 5;
+            grid-template-columns: 16px 20px 20px 20px 20px 16px 41px 60px;
+            grid-template-rows: 56px;
+            margin-top: 20px;
+            margin-bottom: 20px; } }
+        @media only screen and (min-width: 1024px) {
+          header nav .nav-main .nav-main-right {
+            grid-template-columns: 16px 20px 20px 20px 16px 16px auto auto 60px;
+            grid-template-rows: 56px; } }
+        header nav .nav-main .nav-main-right .search-icon {
+          display: grid;
+          grid-column: 1/2;
+          width: 20px;
+          height: 20px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .search-icon {
+              display: none; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .search-icon {
+              display: none; } }
+        header nav .nav-main .nav-main-right .hamburger-icon {
+          display: grid;
+          grid-column: 3/4;
+          margin: 3px 3px;
+          width: 20px;
+          height: 14px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .hamburger-icon {
+              display: none; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .hamburger-icon {
+              display: none; } }
+        header nav .nav-main .nav-main-right .settings-icon {
+          display: none;
+          width: 16px;
+          height: 16px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .settings-icon {
+              display: grid;
+              grid-column: 1/ 2; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .settings-icon {
+              display: grid;
+              grid-column: 1/ 2; } }
+        header nav .nav-main .nav-main-right .mail-icon {
+          display: none;
+          width: 20px;
+          height: 14px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .mail-icon {
+              display: grid;
+              grid-column: 3/ 4; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .mail-icon {
+              display: grid;
+              grid-column: 3/ 4; } }
+        header nav .nav-main .nav-main-right .user-icon {
+          display: none;
+          width: 16px;
+          height: 16px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .user-icon {
+              display: grid;
+              grid-column: 5/ 6; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .user-icon {
+              display: grid;
+              grid-column: 5/ 6; } }
+        header nav .nav-main .nav-main-right .user-name {
+          display: none;
+          height: 15px;
+          font-size: 12px;
+          letter-spacing: 0.14px;
+          color: white;
+          position: relative; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .user-name {
+              display: none; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .user-name {
+              display: grid;
+              grid-column: 7/ 8; } }
+        header nav .nav-main .nav-main-right .logout {
+          display: none;
+          height: 15px;
+          font-size: 12px;
+          letter-spacing: 0.14px;
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+          border: 0; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-main .nav-main-right .logout {
+              display: grid;
+              grid-column: 7/ 8; } }
+          @media only screen and (min-width: 1024px) {
+            header nav .nav-main .nav-main-right .logout {
+              display: grid;
+              grid-column: 9/ 10; } }
+    header nav .nav-search {
+      display: none;
+      width: 100%;
+      height: 56px;
+      background-color: #d71920; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        header nav .nav-search {
+          display: grid;
+          grid-template-columns: 20px 113px 113px auto 280px 20px;
+          grid-template-rows: 56px; } }
+      @media only screen and (min-width: 1024px) {
+        header nav .nav-search {
+          display: grid;
+          grid-template-columns: 66px 113px 113px auto 485px 66px;
+          grid-template-rows: 56px; } }
+      header nav .nav-search .nav-search-button:nth-child(1) {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+      header nav .nav-search .nav-search-button:nth-child(2) {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2; }
+      header nav .nav-search .nav-search-button {
+        color: #f4f4f4;
+        width: 113px;
+        height: 41px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        font-size: 12px; }
+      header nav .nav-search .nav-search-button.active {
+        color: #ac1419;
+        background-color: #f4f4f4; }
+      header nav .nav-search .search-container {
+        display: grid;
+        grid-column: 5/6;
+        width: 100%;
+        height: 40px; }
+        header nav .nav-search .search-container form {
+          display: grid;
+          grid-template-columns: auto 40px 18px;
+          grid-template-rows: 40px;
+          width: 100%;
+          margin-top: 8px;
+          margin-bottom: 8px; }
+          header nav .nav-search .search-container form input {
+            display: grid;
+            grid-column: 1/-1;
+            grid-row: 1/2;
+            border-radius: 4px;
+            width: 100%;
+            height: 40px;
+            padding-left: 18px;
+            font-size: 16px; }
+          header nav .nav-search .search-container form button {
+            display: grid;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            height: 40px;
+            width: 40px;
+            background: transparent;
+            border: none;
+            cursor: pointer; }
+            header nav .nav-search .search-container form button .search-icon-red {
+              height: 20px;
+              width: 20px; }
+          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            header nav .nav-search .search-container form button:hover {
+              background: #ccc; } }
+
+main aside .aside-box-1 h1, main aside .aside-box-1 p, main aside .aside-box-1 a {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal; }
 
 main {
+  display: grid;
+  grid-row: 2 / 3;
   background-color: white;
-  height: 500px;
-}
+  height: min-height(770px, auto); }
+  @media only screen and (min-width: 1024px) {
+    main {
+      display: grid;
+      grid-template-columns: 66px 2.1fr 40px 1fr 66px;
+      grid-template-rows: 39px auto 39px;
+      background-color: #f4f4f4; } }
+  @media only screen and (min-width: 1024px) {
+    main section {
+      display: grid;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      border: solid 1px #dbdbdb;
+      background-color: white;
+      height: auto;
+      grid-template-columns: 20px 1fr 19px;
+      grid-template-rows: 22px 56px 16px 50px 24px auto 27.5px 15px 35px; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details {
+      display: grid;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      grid-template-rows: 12px 32px 12px;
+      grid-template-columns: 313px auto auto; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details .account-name {
+      display: grid;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      text-align: left;
+      width: 151px;
+      height: 12px;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #2f3234; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details .account-title {
+      display: grid;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      text-align: left;
+      width: 313px;
+      height: 32px;
+      font-size: 26px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.31px;
+      color: #000000; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details .account-number {
+      display: grid;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      width: 199px;
+      height: 12px;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #858585; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details .balance-desc {
+      display: grid;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      justify-items: end;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #2f3234; } }
+  @media only screen and (min-width: 1024px) {
+    main section .account-details .balance-value {
+      display: grid;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      justify-items: end;
+      font-size: 26px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2f3234; } }
+  @media only screen and (min-width: 1024px) {
+    main section .action-buttons {
+      display: grid;
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      text-align: right;
+      grid-template-columns: 210px 25px 210px auto;
+      grid-template-rows: 50px; } }
+  @media only screen and (min-width: 1024px) {
+    main section .action-buttons .payment-button {
+      display: grid;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      border-radius: 4px;
+      border: solid 1px #d71920;
+      background-color: #d71920; } }
+  @media only screen and (min-width: 1024px) {
+    main section .action-buttons .payment-button .content {
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.14px;
+      text-align: center;
+      color: white; } }
+  @media only screen and (min-width: 1024px) {
+    main section .action-buttons .story-button {
+      display: grid;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      border-radius: 4px;
+      border: solid 1px #f4f4f4;
+      background-color: #f4f4f4; } }
+  @media only screen and (min-width: 1024px) {
+    main section .action-buttons .story-button .content {
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.14px;
+      text-align: center;
+      color: #d71920; } }
+  @media only screen and (min-width: 1024px) {
+    main section .payment-table {
+      grid-column: 2 / 3;
+      grid-row: 6 / 7; } }
+  main section .payment-table thead {
+    height: 24px; }
+    main section .payment-table thead tr {
+      margin-top: 4.5px;
+      margin-bottom: 4.5px; }
+      @media only screen and (min-width: 1024px) {
+        main section .payment-table thead tr th {
+          width: auto;
+          height: 15px;
+          font-size: 10px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: 0.12px;
+          color: #858585; } }
+  main section .payment-table tbody tr {
+    vertical-align: inherit;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main section .payment-table tbody tr .date-col {
+        width: 73px;
+        text-align: center; } }
+    @media only screen and (min-width: 1024px) {
+      main section .payment-table tbody tr .date-col {
+        width: 73px;
+        text-align: center; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main section .payment-table tbody tr .date-col .outcome-type {
+        display: none; } }
+    @media only screen and (min-width: 1024px) {
+      main section .payment-table tbody tr .date-col .outcome-type {
+        display: none; } }
+    main section .payment-table tbody tr .date-col .outcome-date {
+      text-align: center; }
+    main section .payment-table tbody tr .icon-col {
+      display: none;
+      width: 53px; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        main section .payment-table tbody tr .icon-col {
+          display: inline; } }
+      @media only screen and (min-width: 1024px) {
+        main section .payment-table tbody tr .icon-col {
+          display: inline; } }
+      @media only screen and (min-width: 1024px) {
+        main section .payment-table tbody tr .icon-col img {
+          padding: 20px; } }
+    main section .payment-table tbody tr .details-col {
+      padding-top: 9.5px;
+      height: 30px;
+      padding-bottom: 14.5px;
+      width: auto; }
+    main section .payment-table tbody tr .category-col {
+      display: none; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        main section .payment-table tbody tr .category-col {
+          display: inline; } }
+      @media only screen and (min-width: 1024px) {
+        main section .payment-table tbody tr .category-col {
+          display: inline; } }
+  @media only screen and (min-width: 1024px) {
+    main section .show-more-button {
+      display: grid;
+      grid-row: 8/9;
+      grid-column: 2/3;
+      grid-template-rows: 15px;
+      grid-template-columns: 115px auto; } }
+  @media only screen and (min-width: 1024px) {
+    main section .show-more-button a {
+      text-decoration: none;
+      display: grid;
+      grid-row: 1/2;
+      grid-column: 1/2;
+      justify-self: start;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.07;
+      letter-spacing: 0.17px;
+      text-align: right;
+      color: #d71920; } }
+  main aside {
+    display: none; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      main aside {
+        display: none; } }
+    @media only screen and (min-width: 1024px) {
+      main aside {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 4/5;
+        grid-template-columns: 100%;
+        grid-template-rows: 180px 41px 385px; } }
+    main aside .aside-box-1 {
+      display: grid;
+      grid-row: 1/2;
+      grid-column: 1/2;
+      color: white;
+      background-color: #4c92e0;
+      padding: 20px; }
+      main aside .aside-box-1 h1 {
+        width: 184px;
+        height: 27px;
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 17px; }
+      main aside .aside-box-1 p {
+        width: 288px;
+        height: 51px;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 22px; }
+      main aside .aside-box-1 a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        width: 130px;
+        height: 17px;
+        font-size: 14px;
+        font-weight: bold; }
+    main aside .aside-box-2 {
+      display: grid;
+      grid-row: 3/4;
+      grid-column: 1/2;
+      background-color: white;
+      border: solid 1px #dbdbdb; }
+      main aside .aside-box-2 h1 {
+        margin-left: 20px;
+        margin-top: 14px;
+        width: 134px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.19px;
+        color: #000000; }
 
 header nav .nav-main .nav-main-right .user-name, header nav .nav-main .nav-main-right .logout, header nav .nav-search .nav-search-button, footer {
   font-style: normal;
   font-weight: normal;
   text-align: center;
   font-stretch: normal;
-  letter-spacing: normal;
-}
+  letter-spacing: normal; }
 
 footer {
   display: grid;
+  grid-row: 3 / 4;
   grid-template-columns: 15px auto 15px;
   grid-template-rows: 35px 120px 28px 17px 28px 77px 25px;
   background-color: #f4f4f4;
   height: 330px;
-  color: #858585;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  footer {
-    height: 140px;
-    grid-template-columns: 20px auto 30px;
-    grid-template-rows: 28.5px 17px 15px 17px 15px 33px 13px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  footer {
-    height: 140px;
-    grid-template-columns: 66px 34px 696px auto auto 34px 66px;
-    grid-template-rows: 28.5px 17px 38px 22px 33px;
-  }
-}
-footer .footer-menu {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0;
-}
-@media only screen and (min-width: 1024px) {
+  color: #858585; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+      height: 140px;
+      grid-template-columns: 20px auto 30px;
+      grid-template-rows: 28.5px 17px 15px 17px 15px 33px 13px; } }
+  @media only screen and (min-width: 1024px) {
+    footer {
+      height: 140px;
+      grid-template-columns: 66px 34px 696px auto auto 34px 66px;
+      grid-template-rows: 28.5px 17px 38px 22px 33px; } }
   footer .footer-menu {
-    height: 17px;
-    grid-column: 2/4;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  footer .footer-menu .menu {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer-menu .menu {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  footer .footer-menu .menu ul {
-    display: inline;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer-menu .menu ul {
-    display: inline;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-}
-footer .footer-copyright-content {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 4/5;
-  height: 17px;
-  font-size: 10px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  footer .footer-copyright-content {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  footer .footer-copyright-content {
-    font-size: 14px;
-    margin-top: 4px;
+    display: grid;
+    grid-column: 2/3;
     grid-row: 2/3;
-    grid-column: 5/7;
-  }
-}
-footer .footer-law-content {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 6/7;
-  font-size: 9px;
-  letter-spacing: 0;
-  color: #747474;
-  line-height: normal;
-}
-@media only screen and (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0; }
+    @media only screen and (min-width: 1024px) {
+      footer .footer-menu {
+        height: 17px;
+        grid-column: 2/4; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      footer .footer-menu .menu {
+        display: flex;
+        justify-content: space-between; } }
+    @media only screen and (min-width: 1024px) {
+      footer .footer-menu .menu {
+        display: flex;
+        justify-content: space-between; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      footer .footer-menu .menu ul {
+        display: inline;
+        list-style: none;
+        padding: 0;
+        margin: 0; } }
+    @media only screen and (min-width: 1024px) {
+      footer .footer-menu .menu ul {
+        display: inline;
+        list-style: none;
+        padding: 0;
+        margin: 0; } }
+  footer .footer-copyright-content {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height: 17px;
+    font-size: 10px; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      footer .footer-copyright-content {
+        font-size: 14px; } }
+    @media only screen and (min-width: 1024px) {
+      footer .footer-copyright-content {
+        font-size: 14px;
+        margin-top: 4px;
+        grid-row: 2/3;
+        grid-column: 5/7; } }
   footer .footer-law-content {
-    grid-column: 3/6;
-    grid-row: 5/6;
-  }
-}
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    font-size: 9px;
+    letter-spacing: 0;
+    color: #747474;
+    line-height: normal; }
+    @media only screen and (min-width: 1024px) {
+      footer .footer-law-content {
+        grid-column: 3/6;
+        grid-row: 5/6; } }
+
+.popup-wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.transfer-form-container {
+  margin: 24px;
+  display: grid;
+  grid-template-columns: 265px 1fr 265px;
+  grid-template-rows: 82px 1fr 73px;
+  background-color: white;
+  z-index: 3; }
+  .transfer-form-container .transfer-form-header {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    background-color: #f4f4f4;
+    grid-template-columns: 265px 1fr 19px 20px;
+    grid-template-rows: 25px 32px 25px; }
+    .transfer-form-container .transfer-form-header .transfer-form-title {
+      display: grid;
+      grid-row: 2/3;
+      grid-column: 2/3;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000; }
+    .transfer-form-container .transfer-form-header .close-icon {
+      display: grid;
+      grid-row: 2/3;
+      grid-column: 3/4;
+      padding-top: 7px; }
+  .transfer-form-container .transfer-form-content {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr 201px; }
+    .transfer-form-container .transfer-form-content form {
+      display: grid;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      grid-template-columns: 100%;
+      grid-template-rows: 72px 30px 72px 30px 72px 30px 72px 30px 72px 30px 24px 15px 72px; }
+      .transfer-form-container .transfer-form-content form label select {
+        border-radius: 4px;
+        border: solid 1px #b4b4b4;
+        padding-left: 21px;
+        padding-top: 13px;
+        padding-bottom: 18px; }
+        .transfer-form-container .transfer-form-content form label select option {
+          width: 100px; }
+      .transfer-form-container .transfer-form-content form label input {
+        border-radius: 4px;
+        border: solid 1px #b4b4b4;
+        padding-left: 21px;
+        padding-top: 13px;
+        padding-bottom: 18px; }
+      .transfer-form-container .transfer-form-content form .formElementDesc {
+        font-size: 11px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.1px;
+        color: #979797; }
+      .transfer-form-container .transfer-form-content form #setAsStaticOrderDesc {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #2f3234; }
+      .transfer-form-container .transfer-form-content form #chooseAccountLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #chooseAccountLbl #chooseAccount {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+      .transfer-form-container .transfer-form-content form #toAccountNumberLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #toAccountNumberLbl #toAccountNumber {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+      .transfer-form-container .transfer-form-content form #transferValueLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 5/6;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #transferValueLbl #transferValue {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+      .transfer-form-container .transfer-form-content form #recipientAddressLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 7/8;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #recipientAddressLbl #recipientAddress {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+      .transfer-form-container .transfer-form-content form #transferTitleLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 9/10;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #transferTitleLbl #transferTitle {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+      .transfer-form-container .transfer-form-content form .checkbox-container {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 11/12;
+        grid-template-columns: 24px 20px 1fr;
+        grid-template-rows: 24px;
+        cursor: pointer;
+        user-select: none;
+        color: #2f3234;
+        font-size: 14px;
+        line-height: 24px;
+        /* Hide the browser's default checkbox */
+        /* Show the checkmark when checked */
+        /* Create the checkmark/indicator (hidden when not checked) */ }
+        .transfer-form-container .transfer-form-content form .checkbox-container input {
+          display: grid;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        .transfer-form-container .transfer-form-content form .checkbox-container input:checked ~ .checkmark {
+          background-color: #d71920; }
+        .transfer-form-container .transfer-form-content form .checkbox-container .checkmark:after {
+          left: 20px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        .transfer-form-container .transfer-form-content form .checkbox-container input:checked ~ .checkmark:after {
+          display: grid;
+          justify-content: center;
+          margin-left: 8px;
+          margin-top: 4px; }
+        .transfer-form-container .transfer-form-content form .checkbox-container .checkmark {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 1/2;
+          height: 24px;
+          width: 24px;
+          background-color: #eee; }
+        .transfer-form-container .transfer-form-content form .checkbox-container .checkmark:after {
+          content: "";
+          display: grid;
+          display: none; }
+        .transfer-form-container .transfer-form-content form .checkbox-container #setAsStaticOrderDesc {
+          display: grid;
+          grid-column: 3/4;
+          grid-row: 1/2;
+          margin-top: 4px;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #2f3234; }
+      .transfer-form-container .transfer-form-content form #orderNameLbl {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 13/14;
+        grid-template-columns: 100%;
+        grid-template-rows: 13px 9px 50px; }
+        .transfer-form-container .transfer-form-content form #orderNameLbl #orderName {
+          display: grid;
+          grid-column: 1/2;
+          grid-row: 3/4; }
+  .transfer-form-container .transfer-form-footer {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #f4f4f4;
+    grid-template-columns: 1fr 104px 1fr;
+    grid-template-rows: 73px; }
+    .transfer-form-container .transfer-form-footer .transfer-form-oval {
+      display: grid;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      margin-top: -15px;
+      width: 104px;
+      height: 89px;
+      background-color: #d71920;
+      justify-content: center;
+      grid-template-rows: 27px 16px 5px 16px 25px;
+      grid-template-columns: 44px 20px 40px;
+      clip-path: circle(50% at 50% 60%); }
+      .transfer-form-container .transfer-form-footer .transfer-form-oval img {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2/3; }
+      .transfer-form-container .transfer-form-footer .transfer-form-oval .next {
+        display: grid;
+        grid-row: 4/5;
+        grid-column: 1/-1;
+        justify-content: center; }
+
+.none {
+  display: none;
+  height: 0;
+  width: 0; }
+
+/*# sourceMappingURL=style.css.map */
